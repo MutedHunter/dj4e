@@ -23,6 +23,5 @@ class Auto(models.Model):
     comments = models.CharField(max_length=300)
     make = models.ForeignKey('Make', on_delete=models.CASCADE, null=False)
 
-    # Shows up in the admin list
     def __str__(self):
         return self.nickname
